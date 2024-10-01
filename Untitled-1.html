@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siri Cascudo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Fonte temática -->
+</head>
+<body style="background-color: #f5deb3; font-family: 'Pacifico', cursive; color: #000000;">
+
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td align="right">
+                <a href="#pratos" style="color: #000000;">Pratos</a>
+                <a href="#Delivery" style="color: #000000;">Delivery</a>
+                <a href="#contato" style="color: #000000;">Contato</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Banner Image -->
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center">
+                <img src="imagens/banner.png" alt="Banner" style="width: 100%; height: auto;"> <!-- Largura total, altura proporcional -->
+            </td>
+        </tr>
+    </table>
+
+    <div class="content">
+        <h1 style="font-size: 2em;">Bem-vindo ao Siri Cascudo</h1>
+        <p style="font-size: 1.2em;">O <b>Siri Cascudo</b> é um restaurante inspirado no famoso estabelecimento de "Bob Esponja". Oferecemos uma experiência gastronômica divertida com pratos icônicos como o <b>Siri Burguer</b> e a <b>Sopa de Algas Marinhas</b>, em um ambiente temático que lembra o fundo do mar. Com decoração vibrante e um atendimento amigável, nosso restaurante traz o espírito animado de Bikini Bottom para sua mesa. Venha desfrutar de uma refeição saborosa e um clima descontraído no <b>Siri Cascudo</b>!</p>
+        </br>  </br> </br> </br> </br> </br> </br>
+
+        <div class="section" id="pratos">
+            <h2 style="font-size: 2em;">Promoções</h2>
+            <!-- Usando uma tabela para alinhar as imagens uma ao lado da outra -->
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td align="center">
+                        <img src="imagens/HamburguerAlcatraComBacon_1-scaled.jpg" alt="Filé Mignon ao Molho" width="200">
+                        <p><strong>Hamburger de Siri</strong></p>
+                        <p>Uma delícia de filé mignon servido com molho madeira e acompanhado de batatas gratinadas.</p>
+                    </td>
+                    <td align="center">
+                        <img src="imagens/Batata-frita.jpg" alt="Salada Mediterrânea" width="200">
+                        <p><strong>batatas fritas</strong></p>
+                        <p>Salada fresca com ingredientes do mediterrâneo, perfeita para uma refeição leve e saborosa.</p>
+                    </td>
+                    <td align="center">
+                        <img src="imagens/salada-de-algas-wakame-com-sementes-de-gergelim_711700-5906.jpg" alt="Sushi de Salmão" width="200">
+                        <p><strong>Anéis de Alga</strong></p>
+                        <p>Peças de sushi preparadas com salmão fresco e arroz temperado, uma explosão de sabores.</p>
+                    </td>
+                    <td align="center">
+                        <img src="imagens/pedacos-de-coral-vermelho-seco-closeup-photo_215274-1785.jpg" alt="Pizza Margherita" width="200">
+                        <p><strong>Pedaços de Coral</strong></p>
+                        <p>Pizza clássica italiana com molho de tomate, mussarela de búfala e manjericão fresco.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section" id="Delivery">
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td align="center">
+                        <h2 style="font-size: 2em;">Delivery</h2>
+                        <p>Entre com as informações abaixo para fazer o seu pedido.</p>
+                        <form action="#" method="post">
+                            <table align="center" cellpadding="5">
+                                <tr>
+                                    <td align="right"><label for="email">E-mail:</label></td>
+                                    <td><input type="email" id="email" name="email" placeholder="nome@email.com" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="endereco">Endereço:</label></td>
+                                    <td><input type="text" id="endereco" name="endereco" placeholder="Endereço completo" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="produto">Produto:</label></td>
+                                    <td>
+                                        <select id="produto" name="produto" required>
+                                            <option value="">Selecione</option>
+                                            <option value="produto1">Hamburger de Siri</option>
+                                            <option value="produto2">batatas fritas</option>
+                                            <option value="produto3">Anéis de Alga</option>
+                                            <option value="produto3">Pedaços de Coral</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="quantidade">Quantidade:</label></td>
+                                    <td><input type="number" id="quantidade" name="quantidade" placeholder="Somente números" required></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Forma de Pagamento:</td>
+                                    <td>
+                                        <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" required>
+                                        <label for="dinheiro">Dinheiro</label><br>
+                                        <input type="radio" id="cartao" name="pagamento" value="cartao">
+                                        <label for="cartao">Cartão</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="observacoes">Observações:</label></td>
+                                    <td><textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <button type="submit" style="font-size: 1.2em; color: #ffffff; background-color: #b22222; border: 1px solid #ffffff;">FINALIZAR</button>
+                                        <button type="reset" style="font-size: 1.2em; color: #ffffff; background-color: #b22222; border: 1px solid #ffffff;">CANCELAR</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section" id="contato">
+            <h2 style="font-size: 2em;">Contato</h2>
+            <p>
+                <a href="mailto:contato@comesebebes.com.br" onclick="alert('Eu costumo verificar meus e-mails das 8 da manhã às 7 da noite.')" style="color: #ff0000;">contato@comesebebes.com.br</a><br/>
+                <a href="https://www.instagram.com/@andrezao_o" class="social-links" style="color: #ff0000;">Instagram</a><br/>
+                <a href="https://www.facebook.com/comesebebes" class="social-links" style="color: #ff0000;">Facebook</a><br/>
+                <a href="https://www.twitter.com/comesebebes" class="social-links" style="color: #ff0000;">Twitter</a><br/>
+                <a href="https://www.linkedin.com/company/comesebebes" class="social-links" style="color: #ff0000;">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Siri Cascudo. Todos os direitos reservados.<br/>Ratinho_a_minalesa. - 2024</p>
+    </div>
+
+</body>
+</html>
